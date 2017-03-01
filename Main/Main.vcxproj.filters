@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{784a3dee-fa30-4038-8aa8-2f0fba8de895}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{70af6b59-fc6e-4caf-9fe7-bb0f7bf293f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Images">
+      <UniqueIdentifier>{6c3f6333-b438-4797-9cd1-72335c6782ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Cursors">
+      <UniqueIdentifier>{5116be7d-03ea-4457-b2aa-82e9b40781fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Icons">
+      <UniqueIdentifier>{2a20321b-50fd-449f-b97e-1986ed90cd5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main Frame">
+      <UniqueIdentifier>{3bf244db-7cd2-410c-a3cd-26265243598b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model View">
+      <UniqueIdentifier>{1b52e344-4204-439b-9c7e-6ab4b372858e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hsmnResource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnIBlockDropTarget.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnAboutBox.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnInfoGadget.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnLibraryPane.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnLibraryView.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnLogPane.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnMainFrame.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnMenuStrip.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnMonitoringPane.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnNewModelDialog.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnProgressGadget.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnProjectPane.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnPropertyPane.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnToolStrip.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnViewFrame.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnWindowDialog.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnLevelFrame.h">
+      <Filter>Source Files\Model View</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnLevelPanel.h">
+      <Filter>Source Files\Model View</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnLevelView.h">
+      <Filter>Source Files\Model View</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnApplication.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnPrecompiled.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnDHAddLink.h">
+      <Filter>Source Files\Model View</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnDHMoveComponents.h">
+      <Filter>Source Files\Model View</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnDHResizeBlock.h">
+      <Filter>Source Files\Model View</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnDHSelectGroup.h">
+      <Filter>Source Files\Model View</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnDragHandler.h">
+      <Filter>Source Files\Model View</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnCodeView.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnTagAuthorView.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnSettingsDialog.h">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmnILoopConsumer.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hsmnIBlockDropTarget.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnAboutBox.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnInfoGadget.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnLibraryPane.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnLibraryView.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnLogPane.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnMainFrame.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnMenuStrip.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnMonitoringPane.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnNewModelDialog.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnProgressGadget.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnProjectPane.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnPropertyPane.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnToolStrip.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnViewFrame.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnWindowDialog.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnLevelFrame.cpp">
+      <Filter>Source Files\Model View</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnLevelPanel.cpp">
+      <Filter>Source Files\Model View</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnLevelView.cpp">
+      <Filter>Source Files\Model View</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnPrecompiled.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnDHAddLink.cpp">
+      <Filter>Source Files\Model View</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnDHMoveComponents.cpp">
+      <Filter>Source Files\Model View</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnDHResizeBlock.cpp">
+      <Filter>Source Files\Model View</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnDHSelectGroup.cpp">
+      <Filter>Source Files\Model View</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnDragHandler.cpp">
+      <Filter>Source Files\Model View</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnCodeView.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnTagAuthorView.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnSettingsDialog.cpp">
+      <Filter>Source Files\Main Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmnILoopConsumer.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CaptionIconActive.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\CaptionIconInactive.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\LibraryBlockDragImage.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\LibraryGroupCollapsed.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\LibraryGroupExpaned.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonAlignBottomH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolbarForMenu.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonAlignBottomN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonAlignBottomP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonAlignLeftH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonAlignLeftN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonAlignLeftP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonAlignRightH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonAlignRightN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonAlignRightP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonAlignTopH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonAlignTopN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonAlignTopP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonCloseH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonCloseN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonCloseP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonCompileH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonCompileN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonCompileP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonCopyH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonCopyN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonCopyP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonCutH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonCutN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonCutP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonHelpH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonHelpN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonHelpP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonNewH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonNewN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonNewP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonOpenH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonOpenN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonOpenP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonPasteH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonPasteN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonPasteP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonRedoH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonRedoN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonRedoP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonRunH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonRunN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonRunP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonSameHeightH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonSameHeightN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonSameHeightP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonSameSizeH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonSameSizeN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonSameSizeP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonSameWidthH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonSameWidthN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonSameWidthP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonSaveH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonSaveN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonSaveP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonSettingH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonSettingN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonSettingP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonUndoH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonUndoN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ToolButtonUndoP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Main.ico">
+      <Filter>Resource Files\Icons</Filter>
+    </Image>
+    <Image Include="res\ProjectTreeIcon_Block.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ProjectTreeIcon_Model.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ProjectTreeIcon_Module.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\EventListIcon_Error.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\EventListIcon_Info.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\LevelViewCursor.cur">
+      <Filter>Resource Files\Cursors</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="hsmnResource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

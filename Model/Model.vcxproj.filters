@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="hsmoSetBlockDimensionCommand.cpp">
+      <Filter>Source Files\Commands\Multi Level</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoSetBlockLocationCommand.cpp">
+      <Filter>Source Files\Commands\Multi Level</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoSetJointLocationCommand.cpp">
+      <Filter>Source Files\Commands\Multi Level</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoAddBlockCommand.cpp">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoAddLinkCommand.cpp">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoAlignBlockCommand.cpp">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoCopyCommand.cpp">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoCustomCommand.cpp">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoCutCommand.cpp">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoEqualizeBlockCommand.cpp">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoMoveCommand.cpp">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoPasteCommand.cpp">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoRemoveCommand.cpp">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoResizeBlockCommand.cpp">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoRotateBlockCommand.cpp">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoPrecompiled.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoModelManager.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoModel.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoModuleBlock.cpp">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoModuleInBlock.cpp">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoModuleInPort.cpp">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoModuleIOBlock.cpp">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoModuleLevel.cpp">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoModuleOutBlock.cpp">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoModuleOutPort.cpp">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoIModel.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoEventBlock.cpp">
+      <Filter>Source Files\Core System\Unit Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoIfBlock.cpp">
+      <Filter>Source Files\Core System\Unit Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoSayBlock.cpp">
+      <Filter>Source Files\Core System\Unit Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoIModuleBlock.cpp">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoIModuleIOPort.cpp">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoHriBlock.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoSwitchBlock.cpp">
+      <Filter>Source Files\Core System\Unit Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoVariableBlock.cpp">
+      <Filter>Source Files\Core System\Unit Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoLogMediator.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsmoDialogBlock.cpp">
+      <Filter>Source Files\Core System\Unit Blocks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hsmoResource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoSetBlockDimensionCommand.h">
+      <Filter>Source Files\Commands\Multi Level</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoSetBlockLocationCommand.h">
+      <Filter>Source Files\Commands\Multi Level</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoSetJointLocationCommand.h">
+      <Filter>Source Files\Commands\Multi Level</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoAddBlockCommand.h">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoAddLinkCommand.h">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoAlignBlockCommand.h">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoCopyCommand.h">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoCustomCommand.h">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoCutCommand.h">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoEqualizeBlockCommand.h">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoMoveCommand.h">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoPasteCommand.h">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoRemoveCommand.h">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoResizeBlockCommand.h">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoRotateBlockCommand.h">
+      <Filter>Source Files\Commands\Single Level</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoModule.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoPrecompiled.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoModelManager.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoModel.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoModuleBlock.h">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoModuleInBlock.h">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoModuleInPort.h">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoModuleIOBlock.h">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoModuleLevel.h">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoModuleOutBlock.h">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoModuleOutPort.h">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoIModel.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoEventBlock.h">
+      <Filter>Source Files\Core System\Unit Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoIfBlock.h">
+      <Filter>Source Files\Core System\Unit Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoSayBlock.h">
+      <Filter>Source Files\Core System\Unit Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoIModuleBlock.h">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoIModuleIOPort.h">
+      <Filter>Source Files\Core System\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoHriBlock.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoSwitchBlock.h">
+      <Filter>Source Files\Core System\Unit Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoVariableBlock.h">
+      <Filter>Source Files\Core System\Unit Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoLogMediator.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsmoDialogBlock.h">
+      <Filter>Source Files\Core System\Unit Blocks</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0625659e-c718-4bf9-89f0-59bfae9bdf10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{1dbf5ec9-0fc2-4728-820e-5d9ab26a3ac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Commands">
+      <UniqueIdentifier>{92616132-21ba-4615-b019-6c9cdc24e39b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Commands\Single Level">
+      <UniqueIdentifier>{5215a554-86ea-4f6f-897c-7500e8f34a66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Commands\Multi Level">
+      <UniqueIdentifier>{d6704d51-0c6f-4564-bfc9-3687bc9bd8e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core System">
+      <UniqueIdentifier>{01c38f67-befb-4923-8bfd-d8a9d4854372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core System\Module">
+      <UniqueIdentifier>{7c4da750-9329-43b0-890f-6611f992589b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core System\Unit Blocks">
+      <UniqueIdentifier>{7d71269d-3151-4632-b704-e8e30046fc7a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="hsmoResource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

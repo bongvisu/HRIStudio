@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="hsprModule.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprPrecompiled.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprResource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprBlockPresenter.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprCornerPresenter.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprILevelView.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprIPointSnapTarget.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprISegmentSnapTarget.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprJointPresenter.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprLinkPresenter.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprPortPresenter.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprPresenter.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprSegmentPresenter.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprISelectable.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprIVisual.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprIAlignable.h">
+      <Filter>Source Files\Core System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprBPDialogBlock.h">
+      <Filter>Source Files\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprBPEventBlock.h">
+      <Filter>Source Files\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprBPIfBlock.h">
+      <Filter>Source Files\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprBPModuleBlock.h">
+      <Filter>Source Files\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprBPModuleInBlock.h">
+      <Filter>Source Files\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprBPModuleOutBlock.h">
+      <Filter>Source Files\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprBPSayBlock.h">
+      <Filter>Source Files\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprBPSwitchBlock.h">
+      <Filter>Source Files\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="hsprBPVariableBlock.h">
+      <Filter>Source Files\Blocks</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0625659e-c718-4bf9-89f0-59bfae9bdf10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{1dbf5ec9-0fc2-4728-820e-5d9ab26a3ac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Images">
+      <UniqueIdentifier>{1d9d8e69-fab2-49ae-a2ea-eb9f9a192c4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Blocks">
+      <UniqueIdentifier>{1f870f87-b86c-4c55-8d0b-dc56402bc9c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core System">
+      <UniqueIdentifier>{d918f9b3-08c4-40a1-93db-e8b523afb0f2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hsprModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprPrecompiled.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprBlockPresenter.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprCornerPresenter.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprILevelView.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprIPointSnapTarget.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprISegmentSnapTarget.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprJointPresenter.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprLinkPresenter.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprPortPresenter.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprPresenter.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprSegmentPresenter.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprISelectable.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprIVisual.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprIAlignable.cpp">
+      <Filter>Source Files\Core System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprBPDialogBlock.cpp">
+      <Filter>Source Files\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprBPEventBlock.cpp">
+      <Filter>Source Files\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprBPIfBlock.cpp">
+      <Filter>Source Files\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprBPModuleBlock.cpp">
+      <Filter>Source Files\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprBPModuleInBlock.cpp">
+      <Filter>Source Files\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprBPModuleOutBlock.cpp">
+      <Filter>Source Files\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprBPSayBlock.cpp">
+      <Filter>Source Files\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprBPSwitchBlock.cpp">
+      <Filter>Source Files\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="hsprBPVariableBlock.cpp">
+      <Filter>Source Files\Blocks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="hsprResource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\BlockEvent.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\BlockEvent_C.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\BlockIf.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\BlockIf_C.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\BlockModule.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\BlockModule_C.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\BlockModuleIn.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\BlockModuleIn_C.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\BlockModuleOut.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\BlockModuleOut_C.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\BlockSay.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\BlockSay_C.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\BlockTerminator.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\BlockTerminator_C.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\PointSnap.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_I_B_H.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_I_B_N.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_I_B_S.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_I_L_H.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_I_L_N.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_I_L_S.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_I_R_H.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_I_R_N.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_I_R_S.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_I_T_H.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_I_T_N.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_I_T_S.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_O_B_H.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_O_B_N.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_O_B_S.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_O_L_H.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_O_L_N.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_O_L_S.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_O_R_H.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_O_R_N.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_O_R_S.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_O_T_H.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_O_T_N.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\Port_O_T_S.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\PortGhost_I_B.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\PortGhost_I_L.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\PortGhost_I_R.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\PortGhost_I_T.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\PortGhost_O_B.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\PortGhost_O_L.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\PortGhost_O_R.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\PortGhost_O_T.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

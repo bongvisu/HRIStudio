@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1D3FE78A-C7DF-49F3-9B4F-7D759E96D15C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>xsmo</RootNamespace>
+    <ProjectName>Presentation</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)/</OutDir>
+    <IntDir>$(Configuration)/</IntDir>
+    <TargetName>$(SolutionName).$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)/</OutDir>
+    <IntDir>$(Configuration)/</IntDir>
+    <TargetName>$(SolutionName).$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;HSPR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>hsprPrecompiled.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\SDK\casablanca\include\;..\SDK\chilkat\include\;..\SDK\xscore\include\;..\Model\;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\SDK\casablanca\libs\;..\SDK\chilkat\libs\;..\SDK\xscore\libs\;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;HSPR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>hsprPrecompiled.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\SDK\casablanca\include\;..\SDK\chilkat\include\;..\SDK\xscore\include\;..\Model\;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\SDK\casablanca\libs\;..\SDK\chilkat\libs\;..\SDK\xscore\libs\;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="hsprBPDialogBlock.h" />
+    <ClInclude Include="hsprBlockPresenter.h" />
+    <ClInclude Include="hsprBPEventBlock.h" />
+    <ClInclude Include="hsprBPIfBlock.h" />
+    <ClInclude Include="hsprBPModuleBlock.h" />
+    <ClInclude Include="hsprBPModuleInBlock.h" />
+    <ClInclude Include="hsprBPModuleOutBlock.h" />
+    <ClInclude Include="hsprBPSayBlock.h" />
+    <ClInclude Include="hsprBPSwitchBlock.h" />
+    <ClInclude Include="hsprBPVariableBlock.h" />
+    <ClInclude Include="hsprCornerPresenter.h" />
+    <ClInclude Include="hsprIAlignable.h" />
+    <ClInclude Include="hsprILevelView.h" />
+    <ClInclude Include="hsprIPointSnapTarget.h" />
+    <ClInclude Include="hsprISegmentSnapTarget.h" />
+    <ClInclude Include="hsprISelectable.h" />
+    <ClInclude Include="hsprIVisual.h" />
+    <ClInclude Include="hsprJointPresenter.h" />
+    <ClInclude Include="hsprLinkPresenter.h" />
+    <ClInclude Include="hsprPortPresenter.h" />
+    <ClInclude Include="hsprPresenter.h" />
+    <ClInclude Include="hsprSegmentPresenter.h" />
+    <ClInclude Include="hsprModule.h" />
+    <ClInclude Include="hsprPrecompiled.h" />
+    <ClInclude Include="hsprResource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="hsprResource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hsprBPDialogBlock.cpp" />
+    <ClCompile Include="hsprBlockPresenter.cpp" />
+    <ClCompile Include="hsprBPEventBlock.cpp" />
+    <ClCompile Include="hsprBPIfBlock.cpp" />
+    <ClCompile Include="hsprBPModuleBlock.cpp" />
+    <ClCompile Include="hsprBPModuleInBlock.cpp" />
+    <ClCompile Include="hsprBPModuleOutBlock.cpp" />
+    <ClCompile Include="hsprBPSayBlock.cpp" />
+    <ClCompile Include="hsprBPSwitchBlock.cpp" />
+    <ClCompile Include="hsprBPVariableBlock.cpp" />
+    <ClCompile Include="hsprCornerPresenter.cpp" />
+    <ClCompile Include="hsprIAlignable.cpp" />
+    <ClCompile Include="hsprILevelView.cpp" />
+    <ClCompile Include="hsprIPointSnapTarget.cpp" />
+    <ClCompile Include="hsprISegmentSnapTarget.cpp" />
+    <ClCompile Include="hsprISelectable.cpp" />
+    <ClCompile Include="hsprIVisual.cpp" />
+    <ClCompile Include="hsprJointPresenter.cpp" />
+    <ClCompile Include="hsprLinkPresenter.cpp" />
+    <ClCompile Include="hsprPortPresenter.cpp" />
+    <ClCompile Include="hsprPresenter.cpp" />
+    <ClCompile Include="hsprSegmentPresenter.cpp" />
+    <ClCompile Include="hsprModule.cpp" />
+    <ClCompile Include="hsprPrecompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\BlockEvent.png" />
+    <Image Include="res\BlockEvent_C.png" />
+    <Image Include="res\BlockIf.png" />
+    <Image Include="res\BlockIf_C.png" />
+    <Image Include="res\BlockModule.png" />
+    <Image Include="res\BlockModuleIn.png" />
+    <Image Include="res\BlockModuleIn_C.png" />
+    <Image Include="res\BlockModuleOut.png" />
+    <Image Include="res\BlockModuleOut_C.png" />
+    <Image Include="res\BlockModule_C.png" />
+    <Image Include="res\BlockSay.png" />
+    <Image Include="res\BlockSay_C.png" />
+    <Image Include="res\BlockTerminator.png" />
+    <Image Include="res\BlockTerminator_C.png" />
+    <Image Include="res\PointSnap.png" />
+    <Image Include="res\PortGhost_I_B.png" />
+    <Image Include="res\PortGhost_I_L.png" />
+    <Image Include="res\PortGhost_I_R.png" />
+    <Image Include="res\PortGhost_I_T.png" />
+    <Image Include="res\PortGhost_O_B.png" />
+    <Image Include="res\PortGhost_O_L.png" />
+    <Image Include="res\PortGhost_O_R.png" />
+    <Image Include="res\PortGhost_O_T.png" />
+    <Image Include="res\Port_I_B_H.png" />
+    <Image Include="res\Port_I_B_N.png" />
+    <Image Include="res\Port_I_B_S.png" />
+    <Image Include="res\Port_I_L_H.png" />
+    <Image Include="res\Port_I_L_N.png" />
+    <Image Include="res\Port_I_L_S.png" />
+    <Image Include="res\Port_I_R_H.png" />
+    <Image Include="res\Port_I_R_N.png" />
+    <Image Include="res\Port_I_R_S.png" />
+    <Image Include="res\Port_I_T_H.png" />
+    <Image Include="res\Port_I_T_N.png" />
+    <Image Include="res\Port_I_T_S.png" />
+    <Image Include="res\Port_O_B_H.png" />
+    <Image Include="res\Port_O_B_N.png" />
+    <Image Include="res\Port_O_B_S.png" />
+    <Image Include="res\Port_O_L_H.png" />
+    <Image Include="res\Port_O_L_N.png" />
+    <Image Include="res\Port_O_L_S.png" />
+    <Image Include="res\Port_O_R_H.png" />
+    <Image Include="res\Port_O_R_N.png" />
+    <Image Include="res\Port_O_R_S.png" />
+    <Image Include="res\Port_O_T_H.png" />
+    <Image Include="res\Port_O_T_N.png" />
+    <Image Include="res\Port_O_T_S.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

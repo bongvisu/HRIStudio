@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0a306cfc-68e8-4274-99ce-860dbbacb331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{9e92413d-4495-42c3-b7d7-6f2e53b9bf28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{35272ab4-822c-47b2-8790-57391d23ef71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Images">
+      <UniqueIdentifier>{a67a0fcf-7b44-4f90-a0cb-74d6c9b79cc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Cursors">
+      <UniqueIdentifier>{8ccefb31-4dac-4154-a4ff-7887e2a9d9c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Parameter System">
+      <UniqueIdentifier>{bb56b7ef-9b88-44b6-bc88-852c4411ad6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Property System">
+      <UniqueIdentifier>{1dc7f02e-acd7-43a1-bf3d-e51d6291f03b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hsuiButtonCtrl.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiCheckCtrl.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiCodeEditor.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiComboCtrl.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiDialog.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiDockablePane.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiDockingTabCtrl.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiEditCtrl.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiGenericTabCtrl.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiHorzScrollBar.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiLabelCtrl.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiListCtrl.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiMultiPaneFrameWnd.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiRadioCtrl.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiScrollBar.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiShadowBorder.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiSliderCtrl.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiSystemButtons.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiTabbedPane.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiToolTipCtrl.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiTreeCtrl.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiVertScrollBar.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiVisualManager.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiParamManager.cpp">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiParamWindow.cpp">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPWEventBlock.cpp">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPWLink.cpp">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPWModel.cpp">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPWSayBlock.cpp">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPHBlock.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPHComponent.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPHLinkJoint.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPHLinkSegment.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPHModel.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPHObject.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPropGridColorBar.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPropGridColorButton.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPropGridColorPopupMenu.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPropGridColorProperty.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPropGridCtrl.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPropGridFileProperty.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPropGridFontProperty.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPropGridProperty.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPropHandler.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPropManager.cpp">
+      <Filter>Source Files\Property System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPrecompiled.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPWIfBlock.cpp">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPWSwitchBlock.cpp">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPWVariableBlock.cpp">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiIApplication.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="hsuiPWDialogBlock.cpp">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hsuiResource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiButtonCtrl.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiCheckCtrl.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiCodeEditor.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiComboCtrl.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiDialog.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiDockablePane.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiDockingTabCtrl.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiEditCtrl.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiGenericTabCtrl.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiHorzScrollBar.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiLabelCtrl.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiListCtrl.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiMultiPaneFrameWnd.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiRadioCtrl.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiScrollBar.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiShadowBorder.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiSliderCtrl.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiSystemButtons.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiTabbedPane.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiToolTipCtrl.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiTreeCtrl.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiVertScrollBar.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiVisualManager.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiParamManager.h">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiParamWindow.h">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPWEventBlock.h">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPWLink.h">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPWModel.h">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPWSayBlock.h">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPHBlock.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPHComponent.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPHLinkJoint.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPHLinkSegment.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPHModel.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPHObject.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPropGridColorBar.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPropGridColorButton.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPropGridColorPopupMenu.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPropGridColorProperty.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPropGridCtrl.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPropGridFileProperty.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPropGridFontProperty.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPropGridProperty.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPropHandler.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPropManager.h">
+      <Filter>Source Files\Property System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiModule.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPrecompiled.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPWIfBlock.h">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPWSwitchBlock.h">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPWVariableBlock.h">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiIApplication.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="hsuiPWDialogBlock.h">
+      <Filter>Source Files\Parameter System</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ResizeH.cur">
+      <Filter>Resource Files\Cursors</Filter>
+    </None>
+    <None Include="res\ResizeV.cur">
+      <Filter>Resource Files\Cursors</Filter>
+    </None>
+    <None Include="res\TabMoveD.cur">
+      <Filter>Resource Files\Cursors</Filter>
+    </None>
+    <None Include="res\TabMoveE.cur">
+      <Filter>Resource Files\Cursors</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CheckIconDN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\CheckIconDP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\CheckIconEN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\CheckIconEP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ComboArrowDH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ComboArrowDN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ComboArrowUH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ComboArrowUN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ComboItemIcon.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ComboThumbH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ComboThumbN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\DockGuideB.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\DockGuideBase.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\DockGuideL.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\DockGuideM.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\DockGuideR.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\DockGuideT.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ListHeaderFill.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ListItemIcon.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\MenuCheckD.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\MenuCheckE.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\PropGridDropdownButtonN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\PropGridDropdownButtonP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\RadioButtonDS.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\RadioButtonDU.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\RadioButtonES.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\RadioButtonEU.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ScrollArrowDH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ScrollArrowDN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ScrollArrowLH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ScrollArrowLN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ScrollArrowRH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ScrollArrowRN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ScrollArrowUH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ScrollArrowUN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SliderThumbHD.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SliderThumbHE.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SliderThumbVD.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SliderThumbVE.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SysButtonCloseH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SysButtonCloseN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SysButtonCloseP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SysButtonMaxH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SysButtonMaxN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SysButtonMaxP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SysButtonMinH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SysButtonMinN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SysButtonMinP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SysButtonRestoreH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SysButtonRestoreN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\SysButtonRestoreP.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\TreeItemCollapsedH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\TreeItemCollapsedN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\TreeItemExpanedH.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\TreeItemExpanedN.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\TreeItemIcon.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ShadowBorderB.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ShadowBorderL.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ShadowBorderLB.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ShadowBorderLT.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ShadowBorderR.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ShadowBorderRB.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ShadowBorderRT.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ShadowBorderT.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\MiniCloseButtonDark.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\MiniCloseButtonGray.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\MiniCloseButtonWhite.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\MiniCloseButtonLightGray.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\MiniCloseButtonSemiWhite.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ParamWindowIcon_Block.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ParamWindowIcon_Link.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="res\ParamWindowIcon_Model.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="hsuiResource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

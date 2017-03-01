@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BD232073-F117-4DB6-A269-D006626A7868}</ProjectGuid>
+    <RootNamespace>xsui</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <ProjectName>UserInterface</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)/</OutDir>
+    <IntDir>$(Configuration)/</IntDir>
+    <TargetName>$(SolutionName).$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)/</OutDir>
+    <IntDir>$(Configuration)/</IntDir>
+    <TargetName>$(SolutionName).$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;HSUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>hsuiPrecompiled.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\SDK\casablanca\include\;..\SDK\chilkat\include\;..\SDK\xscore\include\;..\Model\;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\SDK\casablanca\libs\;..\SDK\chilkat\libs\;..\SDK\xscore\libs\;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;HSUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>hsuiPrecompiled.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\SDK\casablanca\include\;..\SDK\chilkat\include\;..\SDK\xscore\include\;..\Model\;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\SDK\casablanca\libs\;..\SDK\chilkat\libs\;..\SDK\xscore\libs\;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="hsuiCodeEditor.cpp" />
+    <ClCompile Include="hsuiButtonCtrl.cpp" />
+    <ClCompile Include="hsuiCheckCtrl.cpp" />
+    <ClCompile Include="hsuiComboCtrl.cpp" />
+    <ClCompile Include="hsuiDialog.cpp" />
+    <ClCompile Include="hsuiDockablePane.cpp" />
+    <ClCompile Include="hsuiDockingTabCtrl.cpp" />
+    <ClCompile Include="hsuiEditCtrl.cpp" />
+    <ClCompile Include="hsuiGenericTabCtrl.cpp" />
+    <ClCompile Include="hsuiHorzScrollBar.cpp" />
+    <ClCompile Include="hsuiIApplication.cpp" />
+    <ClCompile Include="hsuiLabelCtrl.cpp" />
+    <ClCompile Include="hsuiListCtrl.cpp" />
+    <ClCompile Include="hsuiModule.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="hsuiMultiPaneFrameWnd.cpp" />
+    <ClCompile Include="hsuiParamWindow.cpp" />
+    <ClCompile Include="hsuiParamManager.cpp" />
+    <ClCompile Include="hsuiPropGridColorBar.cpp" />
+    <ClCompile Include="hsuiPropGridColorButton.cpp" />
+    <ClCompile Include="hsuiPropGridColorPopupMenu.cpp" />
+    <ClCompile Include="hsuiPHBlock.cpp" />
+    <ClCompile Include="hsuiPHComponent.cpp" />
+    <ClCompile Include="hsuiPHLinkJoint.cpp" />
+    <ClCompile Include="hsuiPHLinkSegment.cpp" />
+    <ClCompile Include="hsuiPrecompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hsuiPrecompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hsuiPrecompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="hsuiPropGridColorProperty.cpp" />
+    <ClCompile Include="hsuiPropGridCtrl.cpp" />
+    <ClCompile Include="hsuiPropGridFileProperty.cpp" />
+    <ClCompile Include="hsuiPropGridFontProperty.cpp" />
+    <ClCompile Include="hsuiPropGridProperty.cpp" />
+    <ClCompile Include="hsuiPropHandler.cpp" />
+    <ClCompile Include="hsuiPHModel.cpp" />
+    <ClCompile Include="hsuiPHObject.cpp" />
+    <ClCompile Include="hsuiPropManager.cpp" />
+    <ClCompile Include="hsuiPWDialogBlock.cpp" />
+    <ClCompile Include="hsuiPWIfBlock.cpp" />
+    <ClCompile Include="hsuiPWLink.cpp" />
+    <ClCompile Include="hsuiPWModel.cpp" />
+    <ClCompile Include="hsuiPWSayBlock.cpp" />
+    <ClCompile Include="hsuiPWEventBlock.cpp" />
+    <ClCompile Include="hsuiPWSwitchBlock.cpp" />
+    <ClCompile Include="hsuiPWVariableBlock.cpp" />
+    <ClCompile Include="hsuiScrollBar.cpp" />
+    <ClCompile Include="hsuiShadowBorder.cpp" />
+    <ClCompile Include="hsuiSystemButtons.cpp" />
+    <ClCompile Include="hsuiTabbedPane.cpp" />
+    <ClCompile Include="hsuiToolTipCtrl.cpp" />
+    <ClCompile Include="hsuiTreeCtrl.cpp" />
+    <ClCompile Include="hsuiVertScrollBar.cpp" />
+    <ClCompile Include="hsuiVisualManager.cpp" />
+    <ClCompile Include="hsuiRadioCtrl.cpp" />
+    <ClCompile Include="hsuiSliderCtrl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hsuiCodeEditor.h" />
+    <ClInclude Include="hsuiButtonCtrl.h" />
+    <ClInclude Include="hsuiCheckCtrl.h" />
+    <ClInclude Include="hsuiComboCtrl.h" />
+    <ClInclude Include="hsuiDialog.h" />
+    <ClInclude Include="hsuiDockablePane.h" />
+    <ClInclude Include="hsuiDockingTabCtrl.h" />
+    <ClInclude Include="hsuiEditCtrl.h" />
+    <ClInclude Include="hsuiGenericTabCtrl.h" />
+    <ClInclude Include="hsuiHorzScrollBar.h" />
+    <ClInclude Include="hsuiIApplication.h" />
+    <ClInclude Include="hsuiLabelCtrl.h" />
+    <ClInclude Include="hsuiListCtrl.h" />
+    <ClInclude Include="hsuiModule.h" />
+    <ClInclude Include="hsuiMultiPaneFrameWnd.h" />
+    <ClInclude Include="hsuiParamWindow.h" />
+    <ClInclude Include="hsuiParamManager.h" />
+    <ClInclude Include="hsuiPropGridColorBar.h" />
+    <ClInclude Include="hsuiPropGridColorButton.h" />
+    <ClInclude Include="hsuiPropGridColorPopupMenu.h" />
+    <ClInclude Include="hsuiPHBlock.h" />
+    <ClInclude Include="hsuiPHComponent.h" />
+    <ClInclude Include="hsuiPHLinkJoint.h" />
+    <ClInclude Include="hsuiPHLinkSegment.h" />
+    <ClInclude Include="hsuiPropGridColorProperty.h" />
+    <ClInclude Include="hsuiPropGridCtrl.h" />
+    <ClInclude Include="hsuiPropGridFileProperty.h" />
+    <ClInclude Include="hsuiPropGridFontProperty.h" />
+    <ClInclude Include="hsuiPropGridProperty.h" />
+    <ClInclude Include="hsuiPropHandler.h" />
+    <ClInclude Include="hsuiPHModel.h" />
+    <ClInclude Include="hsuiPHObject.h" />
+    <ClInclude Include="hsuiPropManager.h" />
+    <ClInclude Include="hsuiPWDialogBlock.h" />
+    <ClInclude Include="hsuiPWIfBlock.h" />
+    <ClInclude Include="hsuiPWLink.h" />
+    <ClInclude Include="hsuiPWModel.h" />
+    <ClInclude Include="hsuiPWSayBlock.h" />
+    <ClInclude Include="hsuiPWEventBlock.h" />
+    <ClInclude Include="hsuiPWSwitchBlock.h" />
+    <ClInclude Include="hsuiPWVariableBlock.h" />
+    <ClInclude Include="hsuiResource.h" />
+    <ClInclude Include="hsuiPrecompiled.h" />
+    <ClInclude Include="hsuiScrollBar.h" />
+    <ClInclude Include="hsuiShadowBorder.h" />
+    <ClInclude Include="hsuiSystemButtons.h" />
+    <ClInclude Include="hsuiTabbedPane.h" />
+    <ClInclude Include="hsuiToolTipCtrl.h" />
+    <ClInclude Include="hsuiTreeCtrl.h" />
+    <ClInclude Include="hsuiVertScrollBar.h" />
+    <ClInclude Include="hsuiVisualManager.h" />
+    <ClInclude Include="hsuiRadioCtrl.h" />
+    <ClInclude Include="hsuiSliderCtrl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="hsuiResource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ResizeH.cur" />
+    <None Include="res\ResizeV.cur" />
+    <None Include="res\TabMoveD.cur" />
+    <None Include="res\TabMoveE.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CheckIconDN.png" />
+    <Image Include="res\CheckIconDP.png" />
+    <Image Include="res\CheckIconEN.png" />
+    <Image Include="res\CheckIconEP.png" />
+    <Image Include="res\ComboArrowDH.png" />
+    <Image Include="res\ComboArrowDN.png" />
+    <Image Include="res\ComboArrowUH.png" />
+    <Image Include="res\ComboArrowUN.png" />
+    <Image Include="res\ComboItemIcon.png" />
+    <Image Include="res\ComboThumbH.png" />
+    <Image Include="res\ComboThumbN.png" />
+    <Image Include="res\DockGuideB.png" />
+    <Image Include="res\DockGuideBase.png" />
+    <Image Include="res\DockGuideL.png" />
+    <Image Include="res\DockGuideM.png" />
+    <Image Include="res\DockGuideR.png" />
+    <Image Include="res\DockGuideT.png" />
+    <Image Include="res\ListHeaderFill.png" />
+    <Image Include="res\ListItemIcon.png" />
+    <Image Include="res\MenuCheckD.png" />
+    <Image Include="res\MenuCheckE.png" />
+    <Image Include="res\MiniCloseButtonDark.png" />
+    <Image Include="res\MiniCloseButtonGray.png" />
+    <Image Include="res\MiniCloseButtonLightGray.png" />
+    <Image Include="res\MiniCloseButtonSemiWhite.png" />
+    <Image Include="res\MiniCloseButtonWhite.png" />
+    <Image Include="res\ParamWindowIcon_Block.png" />
+    <Image Include="res\ParamWindowIcon_Link.png" />
+    <Image Include="res\ParamWindowIcon_Model.png" />
+    <Image Include="res\PropGridDropdownButtonN.png" />
+    <Image Include="res\PropGridDropdownButtonP.png" />
+    <Image Include="res\RadioButtonDS.png" />
+    <Image Include="res\RadioButtonDU.png" />
+    <Image Include="res\RadioButtonES.png" />
+    <Image Include="res\RadioButtonEU.png" />
+    <Image Include="res\ScrollArrowDH.png" />
+    <Image Include="res\ScrollArrowDN.png" />
+    <Image Include="res\ScrollArrowLH.png" />
+    <Image Include="res\ScrollArrowLN.png" />
+    <Image Include="res\ScrollArrowRH.png" />
+    <Image Include="res\ScrollArrowRN.png" />
+    <Image Include="res\ScrollArrowUH.png" />
+    <Image Include="res\ScrollArrowUN.png" />
+    <Image Include="res\ShadowBorderB.png" />
+    <Image Include="res\ShadowBorderL.png" />
+    <Image Include="res\ShadowBorderLB.png" />
+    <Image Include="res\ShadowBorderLT.png" />
+    <Image Include="res\ShadowBorderR.png" />
+    <Image Include="res\ShadowBorderRB.png" />
+    <Image Include="res\ShadowBorderRT.png" />
+    <Image Include="res\ShadowBorderT.png" />
+    <Image Include="res\SliderThumbHD.png" />
+    <Image Include="res\SliderThumbHE.png" />
+    <Image Include="res\SliderThumbVD.png" />
+    <Image Include="res\SliderThumbVE.png" />
+    <Image Include="res\SysButtonCloseH.png" />
+    <Image Include="res\SysButtonCloseN.png" />
+    <Image Include="res\SysButtonCloseP.png" />
+    <Image Include="res\SysButtonMaxH.png" />
+    <Image Include="res\SysButtonMaxN.png" />
+    <Image Include="res\SysButtonMaxP.png" />
+    <Image Include="res\SysButtonMinH.png" />
+    <Image Include="res\SysButtonMinN.png" />
+    <Image Include="res\SysButtonMinP.png" />
+    <Image Include="res\SysButtonRestoreH.png" />
+    <Image Include="res\SysButtonRestoreN.png" />
+    <Image Include="res\SysButtonRestoreP.png" />
+    <Image Include="res\TreeItemCollapsedH.png" />
+    <Image Include="res\TreeItemCollapsedN.png" />
+    <Image Include="res\TreeItemExpanedH.png" />
+    <Image Include="res\TreeItemExpanedN.png" />
+    <Image Include="res\TreeItemIcon.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

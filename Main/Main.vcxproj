@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0794D81E-93F2-4274-A27E-5B6165ADB7EC}</ProjectGuid>
+    <RootNamespace>ast_man</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>Main</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)/</OutDir>
+    <IntDir>$(Configuration)/</IntDir>
+    <TargetName>$(SolutionName).$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)/</OutDir>
+    <IntDir>$(Configuration)/</IntDir>
+    <TargetName>$(SolutionName).$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\SDK\casablanca\include\;..\SDK\chilkat\include\;..\SDK\xscore\include\;..\Model\;..\Presentation\;..\UserInterface\;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>hsmnPrecompiled.h</PrecompiledHeaderFile>
+      <BrowseInformation>false</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\SDK\casablanca\libs\;..\SDK\chilkat\libs\;..\SDK\xscore\libs\;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy /y ..\SDK\casablanca\libs\cpprest140d_2_9.dll ..\$(Configuration)\
+copy /y ..\SDK\xscore\libs\xsCored.dll ..\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\SDK\casablanca\include\;..\SDK\chilkat\include\;..\SDK\xscore\include\;..\Model\;..\Presentation\;..\UserInterface\;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>hsmnPrecompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\SDK\casablanca\libs\;..\SDK\chilkat\libs\;..\SDK\xscore\libs\;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy /y ..\SDK\casablanca\libs\cpprest140_2_9.dll ..\$(Configuration)\
+copy /y ..\SDK\xscore\libs\xsCore.dll ..\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="hsmnAboutBox.h" />
+    <ClInclude Include="hsmnApplication.h" />
+    <ClInclude Include="hsmnCodeView.h" />
+    <ClInclude Include="hsmnDHAddLink.h" />
+    <ClInclude Include="hsmnDHResizeBlock.h" />
+    <ClInclude Include="hsmnDHSelectGroup.h" />
+    <ClInclude Include="hsmnDHMoveComponents.h" />
+    <ClInclude Include="hsmnDragHandler.h" />
+    <ClInclude Include="hsmnLogPane.h" />
+    <ClInclude Include="hsmnIBlockDropTarget.h" />
+    <ClInclude Include="hsmnInfoGadget.h" />
+    <ClInclude Include="hsmnILoopConsumer.h" />
+    <ClInclude Include="hsmnLevelFrame.h" />
+    <ClInclude Include="hsmnLevelPanel.h" />
+    <ClInclude Include="hsmnLevelView.h" />
+    <ClInclude Include="hsmnLibraryPane.h" />
+    <ClInclude Include="hsmnLibraryView.h" />
+    <ClInclude Include="hsmnMenuStrip.h" />
+    <ClInclude Include="hsmnMainFrame.h" />
+    <ClInclude Include="hsmnMonitoringPane.h" />
+    <ClInclude Include="hsmnNewModelDialog.h" />
+    <ClInclude Include="hsmnProgressGadget.h" />
+    <ClInclude Include="hsmnProjectPane.h" />
+    <ClInclude Include="hsmnPropertyPane.h" />
+    <ClInclude Include="hsmnSettingsDialog.h" />
+    <ClInclude Include="hsmnTagAuthorView.h" />
+    <ClInclude Include="hsmnToolStrip.h" />
+    <ClInclude Include="hsmnResource.h" />
+    <ClInclude Include="hsmnPrecompiled.h" />
+    <ClInclude Include="hsmnViewFrame.h" />
+    <ClInclude Include="hsmnWindowDialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hsmnAboutBox.cpp" />
+    <ClCompile Include="hsmnCodeView.cpp" />
+    <ClCompile Include="hsmnDHAddLink.cpp" />
+    <ClCompile Include="hsmnApplication.cpp" />
+    <ClCompile Include="hsmnDHResizeBlock.cpp" />
+    <ClCompile Include="hsmnDHSelectGroup.cpp" />
+    <ClCompile Include="hsmnDHMoveComponents.cpp" />
+    <ClCompile Include="hsmnDragHandler.cpp" />
+    <ClCompile Include="hsmnLogPane.cpp" />
+    <ClCompile Include="hsmnIBlockDropTarget.cpp" />
+    <ClCompile Include="hsmnInfoGadget.cpp" />
+    <ClCompile Include="hsmnILoopConsumer.cpp" />
+    <ClCompile Include="hsmnLevelFrame.cpp" />
+    <ClCompile Include="hsmnLevelPanel.cpp" />
+    <ClCompile Include="hsmnLevelView.cpp" />
+    <ClCompile Include="hsmnLibraryPane.cpp" />
+    <ClCompile Include="hsmnLibraryView.cpp" />
+    <ClCompile Include="hsmnMenuStrip.cpp" />
+    <ClCompile Include="hsmnMainFrame.cpp" />
+    <ClCompile Include="hsmnMonitoringPane.cpp" />
+    <ClCompile Include="hsmnNewModelDialog.cpp" />
+    <ClCompile Include="hsmnPrecompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">hsmnPrecompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">hsmnPrecompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="hsmnProgressGadget.cpp" />
+    <ClCompile Include="hsmnProjectPane.cpp" />
+    <ClCompile Include="hsmnPropertyPane.cpp" />
+    <ClCompile Include="hsmnSettingsDialog.cpp" />
+    <ClCompile Include="hsmnTagAuthorView.cpp" />
+    <ClCompile Include="hsmnToolStrip.cpp" />
+    <ClCompile Include="hsmnViewFrame.cpp" />
+    <ClCompile Include="hsmnWindowDialog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="hsmnResource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CaptionIconActive.png" />
+    <Image Include="res\CaptionIconInactive.png" />
+    <Image Include="res\EventListIcon_Error.png" />
+    <Image Include="res\EventListIcon_Info.png" />
+    <Image Include="res\LibraryBlockDragImage.png" />
+    <Image Include="res\LibraryGroupCollapsed.png" />
+    <Image Include="res\LibraryGroupExpaned.png" />
+    <Image Include="res\Main.ico" />
+    <Image Include="res\ProjectTreeIcon_Block.png" />
+    <Image Include="res\ProjectTreeIcon_Model.png" />
+    <Image Include="res\ProjectTreeIcon_Module.png" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\ToolbarForMenu.png" />
+    <Image Include="res\ToolButtonAlignBottomH.png" />
+    <Image Include="res\ToolButtonAlignBottomN.png" />
+    <Image Include="res\ToolButtonAlignBottomP.png" />
+    <Image Include="res\ToolButtonAlignLeftH.png" />
+    <Image Include="res\ToolButtonAlignLeftN.png" />
+    <Image Include="res\ToolButtonAlignLeftP.png" />
+    <Image Include="res\ToolButtonAlignRightH.png" />
+    <Image Include="res\ToolButtonAlignRightN.png" />
+    <Image Include="res\ToolButtonAlignRightP.png" />
+    <Image Include="res\ToolButtonAlignTopH.png" />
+    <Image Include="res\ToolButtonAlignTopN.png" />
+    <Image Include="res\ToolButtonAlignTopP.png" />
+    <Image Include="res\ToolButtonCloseH.png" />
+    <Image Include="res\ToolButtonCloseN.png" />
+    <Image Include="res\ToolButtonCloseP.png" />
+    <Image Include="res\ToolButtonCompileH.png" />
+    <Image Include="res\ToolButtonCompileN.png" />
+    <Image Include="res\ToolButtonCompileP.png" />
+    <Image Include="res\ToolButtonCopyH.png" />
+    <Image Include="res\ToolButtonCopyN.png" />
+    <Image Include="res\ToolButtonCopyP.png" />
+    <Image Include="res\ToolButtonCutH.png" />
+    <Image Include="res\ToolButtonCutN.png" />
+    <Image Include="res\ToolButtonCutP.png" />
+    <Image Include="res\ToolButtonHelpH.png" />
+    <Image Include="res\ToolButtonHelpN.png" />
+    <Image Include="res\ToolButtonHelpP.png" />
+    <Image Include="res\ToolButtonNewH.png" />
+    <Image Include="res\ToolButtonNewN.png" />
+    <Image Include="res\ToolButtonNewP.png" />
+    <Image Include="res\ToolButtonOpenH.png" />
+    <Image Include="res\ToolButtonOpenN.png" />
+    <Image Include="res\ToolButtonOpenP.png" />
+    <Image Include="res\ToolButtonPasteH.png" />
+    <Image Include="res\ToolButtonPasteN.png" />
+    <Image Include="res\ToolButtonPasteP.png" />
+    <Image Include="res\ToolButtonRedoH.png" />
+    <Image Include="res\ToolButtonRedoN.png" />
+    <Image Include="res\ToolButtonRedoP.png" />
+    <Image Include="res\ToolButtonRunH.png" />
+    <Image Include="res\ToolButtonRunN.png" />
+    <Image Include="res\ToolButtonRunP.png" />
+    <Image Include="res\ToolButtonSameHeightH.png" />
+    <Image Include="res\ToolButtonSameHeightN.png" />
+    <Image Include="res\ToolButtonSameHeightP.png" />
+    <Image Include="res\ToolButtonSameSizeH.png" />
+    <Image Include="res\ToolButtonSameSizeN.png" />
+    <Image Include="res\ToolButtonSameSizeP.png" />
+    <Image Include="res\ToolButtonSameWidthH.png" />
+    <Image Include="res\ToolButtonSameWidthN.png" />
+    <Image Include="res\ToolButtonSameWidthP.png" />
+    <Image Include="res\ToolButtonSaveH.png" />
+    <Image Include="res\ToolButtonSaveN.png" />
+    <Image Include="res\ToolButtonSaveP.png" />
+    <Image Include="res\ToolButtonSettingH.png" />
+    <Image Include="res\ToolButtonSettingN.png" />
+    <Image Include="res\ToolButtonSettingP.png" />
+    <Image Include="res\ToolButtonUndoH.png" />
+    <Image Include="res\ToolButtonUndoN.png" />
+    <Image Include="res\ToolButtonUndoP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\LevelViewCursor.cur" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
