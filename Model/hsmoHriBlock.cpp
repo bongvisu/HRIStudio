@@ -43,7 +43,13 @@ const wchar_t* HRI_EVENT_CODES[NUMBER_OF_HRI_EVENTS] =
 	L"e:person_left",
 	L"e:person_entered_zone",
 	L"e:saliency_changed",
-	L"e:environment_detection"
+	L"e:environment_detection",
+	L"e:top-up",
+	L"e:front-up",
+	L"e:rear-up",
+	L"e:right-up",
+	L"e:left-up",
+	L"e:bottom-up"
 };
 
 XSC_IMPLEMENT_DYNAMIC(hsmo, HriBlock, Block)

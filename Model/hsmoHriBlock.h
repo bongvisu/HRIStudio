@@ -88,6 +88,14 @@ enum HriEvent
 	// Battery
 	BATTERY_LOW_DETECTED,
 
+	// Motion Changed
+	TOP_UP,
+	FRONT_UP,
+	REAR_UP,
+	RIGHT_UP,
+	LEFT_UP,
+	BOTTOM_UP,
+
 	NUMBER_OF_HRI_EVENTS
 };
 
